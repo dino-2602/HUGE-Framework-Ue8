@@ -59,8 +59,8 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 
 **Nachrichtenarchiv**
 
-![Nachrichtenarchiv](https://github.com/dino-2602/HUGE-Framework-Ue7/blob/main/screenshots/message_archive.png)
-- Das Nachrichtenarchiv zeigt eine Liste aller Nachrichten zwischen Benutzern, sortiert nach Datum. Benutzer können vergangene Nachrichten einsehen und durchsuchen.
+![Nachrichten](https://github.com/dino-2602/HUGE-Framework-Ue7/blob/main/screenshots/message_archive.png)
+- Die Nachrichtentabelle zeigt eine Liste aller Nachrichten zwischen Benutzern, sortiert nach Datum. Benutzer können vergangene Nachrichten einsehen und durchsuchen. Zudem wird auch festgestellt ob ein Nutzer die Nachricht gelesen hat
 
 **Nachrichtensenden-Ansicht**
 
