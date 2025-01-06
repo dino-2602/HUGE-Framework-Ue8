@@ -74,10 +74,14 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 ![Nachrichtensenden-Ansicht4](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/screenshots/ungelesen%20von%20dino.png)
 - Die Nachrichtensenden-Ansicht ermöglicht es, eine Nachricht an einen anderen registrierten Benutzer zu senden. Das Formular bietet Feedback, indem die Anzahl der ungelesenen Nachrichten vom Absender angezeigt werden.
 
-**HTML-Code für das Nachrichtenformular**
+**Code für das Nachrichtenformular**
 
-![HTML-Code für das Nachrichtenformular](https://github.com/dino-2602/HUGE-Framework-Ue7/blob/main/screenshots/message_form.png)
-- Das Nachrichtenformular wird mit PHP generiert und bietet Sicherheitsfunktionen wie CSRF-Token. Hier ist ein Ausschnitt aus dem Code, der das Formular erstellt und die Benutzerauswahl dynamisch aus der Datenbank lädt.
+- [Messenger Controller](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/application/controller/MessengerController.php)
+- [Model](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/application/model/MessengerModel.php)
+- [Core View](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/application/core/View.php)
+- [View Messenger Index](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/application/view/messenger/index.php)
+
+- Das Nachrichtenformular wird mit PHP generiert. Die Ausschnitte aus dem Code, der das Formular erstellt und die Benutzerauswahl dynamisch aus der Datenbank lädt.
 
 ## Installation
 Klone dieses Repository:
