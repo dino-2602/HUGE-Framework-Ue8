@@ -31,10 +31,10 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 
 3. **Problem lösen: Cursor bleibt im Textfeld:**
    - Um zu verhindern, dass der Cursor nach dem Absenden einer Nachricht aus dem Textfeld springt, wurde folgende Methode verwendet:
-     - Im JavaScript-Event-Listener für das Nachrichtenformular wurde nach dem erfolgreichen Senden der Nachricht die `focus()`-Methode auf das Textfeld angewendet:
-       ```javascript
-       document.getElementById('message-input').focus();
-       ```
+   - Im JavaScript-Event-Listener für das Nachrichtenformular wurde nach dem erfolgreichen Senden der Nachricht die `focus()`-Methode auf das Textfeld angewendet:
+     ```javascript
+     document.getElementById('message-input').focus();
+     ```
      - Dadurch bleibt der Cursor nach dem Senden der Nachricht im Eingabefeld.
 
 4. **Problem lösen: Nachricht mit Enter senden:**
