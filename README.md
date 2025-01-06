@@ -14,6 +14,7 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 ![Huge Framework](https://img.shields.io/badge/Huge_Framework-1.0-brightgreen)
 ![HTML](https://img.shields.io/badge/HTML-5-orange?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-3-blue?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow?logo=javascript&logoColor=white)
 ![PHPStorm](https://img.shields.io/badge/IDE-PHPStorm-purple?logo=phpstorm&logoColor=white)
 ![MySQL](https://img.shields.io/badge/Database-MySQL-lightblue?logo=mysql&logoColor=white)
 
@@ -23,15 +24,30 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 
 1. **Datenbankanpassungen:**
    - Erstellung einer messages-Tabelle zur Speicherung der Nachrichten.
-   - Hinzufügen von Feldern wie sender_id, receiver_id, message_text und timestamp.
+   - Hinzufügen von Feldern wie sender_id, receiver_id, message, sent_at und is_read.
 
-2. **Backend-Logik:**
-   - Entwicklung einer API für das Senden und Empfangen von Nachrichten.
-   - Implementierung von Validierungen und Sicherheitsfunktionen.
-
-3. **Frontend-Integration:**
+2. **Frontend-Integration:**
    - Erstellung eines einfachen UI für den Nachrichtenversand.
-   - Optional: Einbindung von WebSockets für Echtzeit-Nachrichten.
+
+3. **Problem lösen: Cursor bleibt im Textfeld:**
+   - Um zu verhindern, dass der Cursor nach dem Absenden einer Nachricht aus dem Textfeld springt, wurde folgende Methode verwendet:
+     - Im JavaScript-Event-Listener für das Nachrichtenformular wurde nach dem erfolgreichen Senden der Nachricht die `focus()`-Methode auf das Textfeld angewendet:
+       ```javascript
+       document.getElementById('message-input').focus();
+       ```
+     - Dadurch bleibt der Cursor nach dem Senden der Nachricht im Eingabefeld.
+
+4. **Problem lösen: Nachricht mit Enter senden:**
+   - Um das Senden einer Nachricht mit der Enter-Taste zu ermöglichen, wurde ein Event-Listener hinzugefügt, der auf die Enter-Taste reagiert:
+     ```javascript
+     document.getElementById('message-input').addEventListener('keypress', function(event) {
+         if (event.key === 'Enter') {
+             event.preventDefault();
+             document.getElementById('send-button').click();
+         }
+     });
+     ```
+     - Dadurch wird die Nachricht durch Drücken der Enter-Taste gesendet, ohne dass ein separater Klick auf den Senden-Button erforderlich ist.
 
 ## Screenshots
 
@@ -51,29 +67,7 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 - Das Nachrichtenformular wird mit PHP generiert und bietet Sicherheitsfunktionen wie CSRF-Token. Hier ist ein Ausschnitt aus dem Code, der das Formular erstellt und die Benutzerauswahl dynamisch aus der Datenbank lädt.
 
 ## Installation
-1. Klone dieses Repository:
+Klone dieses Repository:
    ```bash
    git clone https://github.com/dino-2602/HUGE-Framework-Ue7.git
    ```
-
-2. Installiere die Abhängigkeiten mit Composer:
-   ```bash
-   composer install
-   ```
-
-3. Richte die Datenbank ein:
-   - Erstelle eine Datenbank und importiere die migrations.sql-Datei aus dem Repository.
-
-4. Konfiguriere die `.env`-Datei:
-   - Passe die Datenbankzugangsdaten und andere Einstellungen an.
-
-5. Starte die Anwendung:
-   ```bash
-   php artisan serve
-   ```
-   Die Anwendung ist jetzt unter `http://localhost:8000` verfügbar.
-
-## ToDo
-- Verbesserte Benutzeroberfläche
-- Integration von WebSockets
-- Erweiterte Fehlerbehandlung
