@@ -81,7 +81,7 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 - [Core View](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/application/core/View.php)
 - [View Messenger Index](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/application/view/messenger/index.php)
 
-- Das Nachrichtenformular wird mit PHP generiert. Die Ausschnitte aus dem Code, der das Formular erstellt und die Benutzerauswahl dynamisch aus der Datenbank lädt.
+- Das Nachrichtenformular wird mit PHP generiert. Die Ausschnitte aus dem Code, die das Formular erstellen und die Benutzer dynamisch aus der Datenbank lädt.
 
 ## Installation
 Klone dieses Repository:
