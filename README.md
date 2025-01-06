@@ -65,8 +65,11 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 
 **Nachrichtensenden-Ansicht**
 
-![Nachrichtensenden-Ansicht](https://github.com/dino-2602/HUGE-Framework-Ue7/blob/main/screenshots/message_send.png)
-- Die Nachrichtensenden-Ansicht ermöglicht es, eine Nachricht an einen anderen registrierten Benutzer zu senden. Das Formular bietet Echtzeit-Validierung und Feedback.
+![Nachrichtensenden-Ansicht1](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/screenshots/message%20von%20demo%20zu%20dino.png)
+![Nachrichtensenden-Ansicht2](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/screenshots/message%20von%20dino%20zu%20demo.png)
+![Nachrichtensenden-Ansicht3](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/screenshots/ungelesen%20von%20demo.png)
+![Nachrichtensenden-Ansicht4](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/screenshots/ungelesen%20von%20dino.png)
+- Die Nachrichtensenden-Ansicht ermöglicht es, eine Nachricht an einen anderen registrierten Benutzer zu senden. Das Formular bietet Feedback, indem die Anzahl der ungelesenen Nachrichten vom Absender angezeigt werden.
 
 **HTML-Code für das Nachrichtenformular**
 
