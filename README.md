@@ -6,7 +6,7 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 - Archivierung von Nachrichten in der Datenbank.
 
 ## Features
-- **Nachrichtenversand:** Benutzer können Nachrichten in Echtzeit oder über das Archiv senden.
+- **Nachrichtenversand:** Benutzer können Nachrichten über einen Messenger senden.
 - **Nachrichtenarchiv:** Alle Nachrichten werden in der Datenbank gespeichert und können eingesehen werden.
 
 ## Technologien
@@ -48,10 +48,16 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
      });
      ```
      - Dadurch wird die Nachricht durch Drücken der Enter-Taste gesendet, ohne dass ein separater Klick auf den Senden-Button erforderlich ist.
+    
+5. **Problem lösen: Automatisches Scrollen zum neuesten Eintrag:**
+   - Um sicherzustellen, dass der Nutzer immer die neuesten Nachrichten sieht, wurde ein automatisches Scrollen implementiert:
+   - ```javascript
+     document.querySelector('.discussion').scrollTop = document.querySelector('.discussion').scrollHeight;
+     ```
 
 ## Screenshots
 
-**Nachrichtenarchiv mit Benutzerübersicht**
+**Nachrichtenarchiv**
 
 ![Nachrichtenarchiv](https://github.com/dino-2602/HUGE-Framework-Ue7/blob/main/screenshots/message_archive.png)
 - Das Nachrichtenarchiv zeigt eine Liste aller Nachrichten zwischen Benutzern, sortiert nach Datum. Benutzer können vergangene Nachrichten einsehen und durchsuchen.
@@ -69,5 +75,5 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 ## Installation
 Klone dieses Repository:
    ```bash
-   git clone https://github.com/dino-2602/HUGE-Framework-Ue7.git
+   git clone https://github.com/dino-2602/HUGE-Framework-Ue8.git
    ```
