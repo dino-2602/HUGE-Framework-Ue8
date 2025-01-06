@@ -66,8 +66,8 @@ Dieses Projekt erweitert das Huge Framework um eine Messenger-Anwendung:
 **Nachrichtensenden-Ansicht**
 
 <div>
-  <img src="https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/screenshots/message%20von%20demo%20zu%20dino.png" alt="Nachrichtensenden-Ansicht1" width="400" />
-  <img src="https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/screenshots/message%20von%20dino%20zu%20demo.png" alt="Nachrichtensenden-Ansicht2" width="400" />
+  <img src="https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/screenshots/message%20von%20demo%20zu%20dino.png" alt="Nachrichtensenden-Ansicht1" width="500" />
+  <img src="https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/screenshots/message%20von%20dino%20zu%20demo.png" alt="Nachrichtensenden-Ansicht2" width="500" />
 </div>
 
 ![Nachrichtensenden-Ansicht3](https://github.com/dino-2602/HUGE-Framework-Ue8/blob/main/huge/screenshots/ungelesen%20von%20demo.png)
